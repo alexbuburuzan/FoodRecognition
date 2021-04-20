@@ -7,6 +7,7 @@ from inference import FoodRecognitionHandler
 ROOT = "/home/buburuzan08/FoodRecognition/Flask"
 MODEL_PATH = ROOT + '/resources/classification_model.pth'
 
+# load numpy array with the classes
 classes = np.load(ROOT + '/resources/classes.npy')
 handler = FoodRecognitionHandler(MODEL_PATH, classes)
 
