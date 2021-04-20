@@ -8,17 +8,17 @@ random.seed(SEED)
 torch.random.manual_seed(SEED)
 numpy.random.seed(SEED)
 
-ROOT = 'C:/Users/bubur/Documents/FoodRecognition'
+ROOT = 'FoodRecognition'
 
 data_config = {
-    'metadata_path' : ROOT + '/Food-101/meta/metadata.csv',
-    'data_path' : ROOT + '/Food-101/data',
+    'metadata_path' : ROOT + '/data/metadata.csv',
+    'data_path' : ROOT + '/data',
 
     'image_size' : (256, 256)
 }
 
 train_config = {
-    'round_name' : 'resnet50_augmentations_Food101_multiclass_2',
+    'round_name' : 'round_description',
     'debug' : False,
     'lr_finder' : False,
 
